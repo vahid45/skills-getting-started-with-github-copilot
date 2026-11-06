@@ -38,13 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
         participantsSection.setAttribute("aria-label", `${name} participants`);
         participantsSection.setAttribute("aria-live", "polite");
 
-        const participantsHeading = document.createElement("h5");
+        const participantsHeading = document.createElement("h4");
         participantsHeading.className = "participants-heading";
         participantsHeading.textContent = "Participants";
 
         const participantCount = document.createElement("span");
         participantCount.className = "participant-count";
-        participantCount.textContent = details.participants.length;
+        participantCount.textContent = `${details.participants.length} signed up`;
         participantsHeading.appendChild(participantCount);
         participantsSection.appendChild(participantsHeading);
 
