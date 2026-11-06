@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const participantsSection = document.createElement("div");
         participantsSection.className = "participants-section";
+        participantsSection.setAttribute("role", "region");
+        participantsSection.setAttribute("aria-label", `${name} participants`);
+        participantsSection.setAttribute("aria-live", "polite");
 
         const participantsHeading = document.createElement("h5");
         participantsHeading.className = "participants-heading";
